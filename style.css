@@ -54,3 +54,9 @@ body {
 main {
   height: 100%;
 }
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 15px;
+  color: #ff5722;
+}
