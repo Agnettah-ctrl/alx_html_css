@@ -3,112 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Advanced Project</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>SmileSchool</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header Section -->
   <header class="main-header">
-    <nav class="nav-bar">
-      <div class="logo">Smile School</div>
-      <div class="nav-links">
-        <a href="#">Courses</a>
-        <a href="#">Pricing</a>
-        <a href="#">Login</a>
-      </div>
-    </nav>
-    <div class="banner">
-      <h1>Get schooled</h1>
-      <ul class="sub-links">
-        <li>SMILES</li>
-        <li>GRIN</li>
-        <li>LAUGH</li>
-      </ul>
-      <a href="#" class="btn-primary">Register for free</a>
+    <div class="nav-bar">
+      <div class="logo">😊 SmileSchool</div>
+      <nav class="nav-links">
+        <a href="#">COURSES</a>
+        <a href="#">PRICING</a>
+        <a href="#">LOGIN</a>
+      </nav>
     </div>
+
+    <section class="banner">
+      <img src="banner.jpg" alt="Banner" class="banner-image" />
+      <div class="banner-content">
+        <h1>Get schooled</h1>
+        <ul class="sub-links">
+          <li>SMILES</li>
+          <li>GRIN</li>
+          <li>LAUGH</li>
+        </ul>
+        <a href="#" class="btn-primary">REGISTER FOR FREE</a>
+      </div>
+    </section>
   </header>
 
-  <!-- Quote/Testimonial Section -->
   <section class="quote-section">
-    <img src="quote-image.jpg" alt="Testimonial" class="quote-image" />
+    <img src="person.jpg" alt="Person" class="quote-image" />
     <blockquote>
       “Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!”
-      <div class="quote-name">Phillip Massey</div>
-      <div class="quote-role">Smile Coach</div>
     </blockquote>
+    <p class="quote-name">Person Name</p>
+    <p class="quote-role">Weather Presenter</p>
   </section>
 
-  <!-- Videos List Section -->
-  <section class="videos">
-    <h2><span class="highlight">Most popular</span> tutorials</h2>
-    <div class="video-cards">
-      
-      <!-- Card 1 -->
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="thumb1.jpg" alt="Diagonal Smile" />
-          <div class="play-button">&#9658;</div>
-        </div>
-        <h3>Diagonal Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="video-meta">
-          <img src="avatar1.jpg" alt="Phillip Massey" class="author-img" />
-          <span class="author-name">Phillip Massey</span>
-          <span class="rating">★★★★★</span>
-          <span class="duration">8 min</span>
-        </div>
+  <section class="popular-videos">
+    <h2>Most <span class="highlight">popular</span> tutorials</h2>
+    <div class="video-card">
+      <img src="thumb1.jpg" alt="Diagonal Smile" class="video-thumb" />
+      <h3>Diagonal Smile</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="author">
+        <img src="person.jpg" alt="Author" class="author-thumb" />
+        <p>Phillip Massey</p>
       </div>
-
-      <!-- Card 2 -->
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="thumb2.jpg" alt="Sad Smile" />
-          <div class="play-button">&#9658;</div>
-        </div>
-        <h3>Sad Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="video-meta">
-          <img src="avatar2.jpg" alt="Phillip Massey" class="author-img" />
-          <span class="author-name">Phillip Massey</span>
-          <span class="rating">★★★★★</span>
-          <span class="duration">8 min</span>
-        </div>
+      <div class="rating">
+        ★★★★★
       </div>
-
-      <!-- Card 3 -->
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="thumb3.jpg" alt="Natural Smile" />
-          <div class="play-button">&#9658;</div>
-        </div>
-        <h3>Natural Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="video-meta">
-          <img src="avatar3.jpg" alt="Phillip Massey" class="author-img" />
-          <span class="author-name">Phillip Massey</span>
-          <span class="rating">★★★★★</span>
-          <span class="duration">8 min</span>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="thumb4.jpg" alt="Happy Smile" />
-          <div class="play-button">&#9658;</div>
-        </div>
-        <h3>Happy Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="video-meta">
-          <img src="avatar4.jpg" alt="Phillip Massey" class="author-img" />
-          <span class="author-name">Phillip Massey</span>
-          <span class="rating">★★★★★</span>
-          <span class="duration">8 min</span>
-        </div>
-      </div>
-
+      <p class="duration">8 min</p>
     </div>
   </section>
 
