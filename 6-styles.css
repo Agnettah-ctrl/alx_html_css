@@ -1,0 +1,103 @@
+/* === BASIC RESET === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === VARIABLES === */
+:root {
+  --primary-color: #ff4f81;
+  --secondary-color: #4fafff;
+  --third-color: #4fff81;
+  --text-color: #222;
+  --bg-color: #fff;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* === BASE STYLES === */
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+/* === OUR RESULTS SECTION === */
+.results {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.results__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.results__subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.results__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.result-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+.result-card__title {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.result-card__desc {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* === CSS Pentagon === */
+.pentagon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+}
+
+.pentagon--1 {
+  background: var(--primary-color);
+}
+
+.pentagon--2 {
+  background: var(--secondary-color);
+}
+
+.pentagon--3 {
+  background: var(--third-color);
+}
+
+/* Optional animation */
+.pentagon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
