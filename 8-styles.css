@@ -1,0 +1,75 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  color: #fff;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === HAMBURGER === */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* === MOBILE MENU === */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #222;
+  padding: 1rem;
+}
+.mobile-menu a {
+  padding: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+
+/* === MEDIA QUERY (≤ 480px) === */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-menu.show {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+  }
+}
+
+/* === ANIMATION === */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
